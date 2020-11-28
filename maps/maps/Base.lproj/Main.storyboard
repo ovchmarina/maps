@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aTv-Mw-CEA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Silom.ttf">
+            <string>Silom</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Location-->
+        <scene sceneID="p3D-YD-LLk">
+            <objects>
+                <viewController id="GKo-ta-Khv" customClass="LocationVC" customModule="maps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aT7-2S-wka">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWM-0v-wan">
+                                <rect key="frame" x="0.0" y="44" width="414" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="QAT-m0-9bg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Silom" family="Silom" pointSize="56"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_background" translatesAutoresizingMaskIntoConstraints="NO" id="46c-YP-2Cq">
+                                <rect key="frame" x="107" y="239" width="201" height="288"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghd-gA-Vmg">
+                                <rect key="frame" x="20" y="552" width="80" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Silom" family="Silom" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lon:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBp-PA-QqT">
+                                <rect key="frame" x="17" y="595" width="83" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Silom" family="Silom" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dataLat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKc-zB-ICS">
+                                <rect key="frame" x="107" y="552" width="287" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Silom" family="Silom" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dataLon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rut-xF-lJH">
+                                <rect key="frame" x="107" y="595" width="287" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Silom" family="Silom" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tjl-VT-cfk"/>
+                        <color key="backgroundColor" name="green"/>
+                        <constraints>
+                            <constraint firstItem="Tjl-VT-cfk" firstAttribute="trailing" secondItem="iWM-0v-wan" secondAttribute="trailing" id="PPF-Ae-Y79"/>
+                            <constraint firstItem="iWM-0v-wan" firstAttribute="leading" secondItem="Tjl-VT-cfk" secondAttribute="leading" id="cHe-b9-DFJ"/>
+                            <constraint firstItem="iWM-0v-wan" firstAttribute="top" secondItem="Tjl-VT-cfk" secondAttribute="top" id="nzF-VL-Fwh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Location" image="location.fill" catalog="system" id="b0i-WI-RHX"/>
+                    <connections>
+                        <outlet property="dataLat" destination="YKc-zB-ICS" id="9pS-wD-3jZ"/>
+                        <outlet property="dataLon" destination="Rut-xF-lJH" id="z1L-0f-yoq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ofb-0f-MiC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="5.3571428571428568"/>
+        </scene>
+        <!--map-->
+        <scene sceneID="TGr-DZ-9qS">
+            <objects>
+                <viewController id="aTv-Mw-CEA" customClass="MapVC" customModule="maps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ge2-dn-zul">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Hs8-jI-m5t">
+                                <rect key="frame" x="0.0" y="56" width="414" height="840"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mre-EG-8fv"/>
+                        <color key="backgroundColor" name="green"/>
+                        <constraints>
+                            <constraint firstItem="Hs8-jI-m5t" firstAttribute="leading" secondItem="Mre-EG-8fv" secondAttribute="leading" id="WPk-TC-NlF"/>
+                            <constraint firstItem="Hs8-jI-m5t" firstAttribute="top" secondItem="Mre-EG-8fv" secondAttribute="top" id="dYw-Nd-oXa"/>
+                            <constraint firstItem="Mre-EG-8fv" firstAttribute="trailing" secondItem="Hs8-jI-m5t" secondAttribute="trailing" id="kQ0-JA-1eQ"/>
+                            <constraint firstItem="Mre-EG-8fv" firstAttribute="bottom" secondItem="Hs8-jI-m5t" secondAttribute="bottom" id="o94-lQ-7gJ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="map" image="map" catalog="system" id="OW3-Kq-aJz"/>
+                    <connections>
+                        <outlet property="mapView" destination="Hs8-jI-m5t" id="Tvj-db-80n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ukI-f2-r0Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="-601.33928571428567"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="JnV-NW-CKL">
+            <objects>
+                <tabBarController id="6yP-EQ-B61" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hzH-DF-lQp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="aTv-Mw-CEA" kind="relationship" relationship="viewControllers" id="l2I-MQ-Ail"/>
+                        <segue destination="GKo-ta-Khv" kind="relationship" relationship="viewControllers" id="jR3-Yr-mLH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFR-YD-SFT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-783" y="-298"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_background" width="202" height="288.5"/>
+        <image name="location.fill" catalog="system" width="128" height="121"/>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <namedColor name="green">
+            <color red="0.0" green="0.87800002098083496" blue="0.019999999552965164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
